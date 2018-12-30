@@ -1,0 +1,16 @@
+spring:
+  nats:
+    nats-urls: nats://127.0.0.1:4222,nats://127.0.0.1:4223,nats://127.0.0.1:4224
+    token: NATS12345
+    max-reconnect: -1
+    reconnect-wait: 1
+    connection-timeout: 3
+    streaming:
+      cluster-id: test-cluster
+      nats-urls: nats://127.0.0.1:4222,nats://127.0.0.1:4223,nats://127.0.0.1:4224
+      token: NATS12345
+      max-reconnect: -1 #一直重连
+      reconnect-wait: 1
+      connection-timeout: 3
+server:
+  port: 80
